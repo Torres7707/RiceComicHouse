@@ -1,0 +1,261 @@
+header {
+  height: 4.3rem !important;
+  background: url(../img/comicPlay/play.png) no-repeat !important;
+  background-size: 100% 100% !important;
+  position: relative !important;
+}
+header .playButton {
+  width: 0.96rem;
+  height: 0.96rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.playContent {
+  width: 100%;
+  height: auto;
+  margin: 0.24rem auto;
+  padding: 0 0.32rem 0;
+  background-color: transparent;
+}
+.playContent .dramaInfo {
+  width: 100%;
+  background: #ffffff;
+  padding: 0.24rem;
+  border-radius: 0.07rem;
+  box-shadow: 0 12px 24px -12px #cccccc;
+}
+.playContent .dramaInfo img.dramaImg {
+  width: 18%;
+  float: left;
+}
+.playContent .dramaInfo .dramaText {
+  width: 82%;
+  float: left;
+  padding-left: 0.2rem;
+}
+.playContent .dramaInfo .dramaText .heading {
+  width: 100%;
+}
+.playContent .dramaInfo .dramaText .heading p.name {
+  font-size: 0.24rem;
+  line-height: 0.26rem;
+  float: left;
+  color: #76a8fc;
+}
+.playContent .dramaInfo .dramaText .heading p.score {
+  font-size: 0.2rem;
+  line-height: 0.26rem;
+  float: right;
+  color: #ffbf24;
+}
+.playContent .dramaInfo .dramaText p.time {
+  width: 100%;
+  font-size: 0.18rem;
+  line-height: 0.26rem;
+  color: #b8c9e5;
+}
+.playContent .dramaInfo .dramaText p.intro {
+  width: 100%;
+  font-size: 0.2rem;
+  line-height: 0.26rem;
+  color: #7a8699;
+}
+.playContent .dramaInfo .dramaText .bottom {
+  width: 100%;
+  margin-top: 0.18rem;
+}
+.playContent .dramaInfo .dramaText .bottom .playNum {
+  font-size: 0.2rem;
+  line-height: 0.28rem;
+  color: #b8c9e5;
+  float: left;
+}
+.playContent .dramaInfo .dramaText .bottom .operate {
+  float: right;
+}
+.playContent .dramaInfo .dramaText .bottom .operate span {
+  font-size: 0.2rem;
+  color: #b8c9e5;
+}
+.playContent .dramaInfo .dramaText .bottom .operate img {
+  width: 0.3rem;
+}
+.playContent .more {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  border-radius: 0.05rem;
+  padding: 0.25rem 0;
+  margin-top: 0.4rem;
+  box-shadow: 0 12px 24px -12px #cccccc;
+}
+.playContent .more .title {
+  width: 100%;
+  height: 0.32rem;
+  line-height: 0.32rem;
+}
+.playContent .more .title h4 {
+  float: left;
+  font-size: 0.32rem;
+  padding-left: 0.15rem;
+  color: #76a8fc;
+  font-weight: 400;
+  border-left: 0.08rem solid #76a8fc;
+}
+.playContent .more .title .refresh {
+  width: 0.32rem;
+  float: right;
+  margin-right: 0.2rem;
+}
+.playContent .more .title span {
+  float: right;
+  font-size: 0.2rem;
+  color: #b8c9e5;
+}
+.playContent .more .drama_content {
+  width: 100%;
+  height: auto;
+  padding: 0.25rem 0.2rem 0;
+}
+.playContent .more .drama_content .row {
+  width: 100%;
+  height: auto;
+}
+.playContent .more .drama_content .row .part {
+  float: left;
+  width: 33.33333%;
+  height: auto;
+  padding: 0 0.12rem 0.24rem;
+  text-align: center;
+}
+.playContent .more .drama_content .row .part a {
+  display: block;
+}
+.playContent .more .drama_content .row .part a img {
+  width: 100%;
+}
+.playContent .more .drama_content .row .part a p {
+  text-align: left !important;
+}
+.playContent .more .drama_content .row .part a p.name {
+  width: 74.3%;
+  float: left;
+  font-size: 0.24rem;
+  line-height: 0.30rem;
+  color: #7a8699;
+}
+.playContent .more .drama_content .row .part a p.score {
+  width: 25.6%;
+  float: left;
+  font-size: 0.2rem;
+  line-height: 0.30rem;
+  color: #ffd97c;
+}
+.playContent .more .drama_content .row .part a p.status {
+  float: left;
+  width: 100%;
+  font-size: 0.2rem;
+  line-height: 0.30rem;
+  color: #cbd7ec;
+}
+.playContent .comment {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  border-radius: 0.05rem;
+  padding: 0.25rem 0;
+  margin-top: 0.4rem;
+  box-shadow: 0 12px 24px -12px #cccccc;
+}
+.playContent .comment .title {
+  width: 100%;
+  height: 0.32rem;
+  line-height: 0.32rem;
+}
+.playContent .comment .title h4 {
+  float: left;
+  font-size: 0.32rem;
+  padding-left: 0.15rem;
+  color: #76a8fc;
+  font-weight: 400;
+}
+.playContent .comment .title p {
+  float: left;
+  font-size: 0.2rem;
+  line-height: 0.2rem;
+  margin-top: 0.12rem;
+}
+.playContent .comment .comment-content {
+  width: 100%;
+  padding: 0.2rem 0.25rem;
+}
+.playContent .comment .comment-content .avatar {
+  width: 17%;
+  height: 100%;
+  float: left;
+}
+.playContent .comment .comment-content .avatar .avatarImg {
+  width: 80%;
+  margin: 0 auto;
+}
+.playContent .comment .comment-content .avatar .avatarImg img.avatar {
+  width: 100%;
+}
+.playContent .comment .comment-content .userInfo {
+  width: 83%;
+  float: left;
+  padding-left: 0.24rem;
+}
+.playContent .comment .comment-content .userInfo .top {
+  width: 100%;
+}
+.playContent .comment .comment-content .userInfo .top p.name {
+  font-size: 0.32rem;
+  line-height: 0.5rem;
+  color: #76a8fc;
+  float: left;
+}
+.playContent .comment .comment-content .userInfo .top p.comment-time {
+  float: right;
+  font-size: 0.2rem;
+  line-height: 0.5rem;
+  color: #b8c9e5;
+}
+.playContent .comment .comment-content .userInfo .bottom {
+  width: 100%;
+  margin-top: 0.24rem;
+}
+.playContent .comment .comment-content .userInfo .bottom p {
+  font-size: 0.24rem;
+  line-height: 0.3rem;
+  color: #858f99;
+}
+.sendComment {
+  width: 100%;
+  height: 1rem;
+  background-color: #ffffff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 -12px 20px -12px #cccccc;
+}
+.sendComment input {
+  width: 86.666666%;
+  height: 1rem;
+  font-size: 0.24rem;
+  color: #333333;
+  line-height: 1rem;
+  text-indent: 0.55rem;
+  float: left;
+}
+.sendComment a {
+  float: right;
+  width: 1rem;
+  height: 1rem;
+  background-color: #76a8fc;
+  background-image: url(../img/comicPlay/plane.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}

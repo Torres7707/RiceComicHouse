@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/base1.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/dynamic.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <title>dynamic</title>
+    <script>
+        (function (designWidth, maxWidth) {
+            var doc = document,
+                win = window;
+            var docEl = doc.documentElement;
+            var tid;
+            var rootItem, rootStyle;
+
+            function refreshRem() {
+                var width = docEl.getBoundingClientRect().width;
+                if (!maxWidth) {
+                    maxWidth = 540;
+                };
+                if (width > maxWidth) {
+                    width = maxWidth;
+                }
+                //与淘宝做法不同，直接采用简单的rem换算方法1rem=100px
+                var rem = width * 100 / designWidth;
+                //兼容UC开始
+                rootStyle = "html{font-size:" + rem + 'px !important}';
+                rootItem = document.getElementById('rootsize') || document.createElement("style");
+                if (!document.getElementById('rootsize')) {
+                    document.getElementsByTagName("head")[0].appendChild(rootItem);
+                    rootItem.id = 'rootsize';
+                }
+                if (rootItem.styleSheet) {
+                    rootItem.styleSheet.disabled || (rootItem.styleSheet.cssText = rootStyle)
+                } else {
+                    try {
+                        rootItem.innerHTML = rootStyle
+                    } catch (f) {
+                        rootItem.innerText = rootStyle
+                    }
+                }
+                //兼容UC结束
+                docEl.style.fontSize = rem + "px";
+            };
+            refreshRem();
+
+            win.addEventListener("resize", function () {
+                clearTimeout(tid); //防止执行两次
+                tid = setTimeout(refreshRem, 300);
+            }, false);
+
+            win.addEventListener("pageshow", function (e) {
+                if (e.persisted) { // 浏览器后退的时候重新计算
+                    clearTimeout(tid);
+                    tid = setTimeout(refreshRem, 300);
+                }
+            }, false);
+
+            if (doc.readyState === "complete") {
+                doc.body.style.fontSize = "16px";
+            } else {
+                doc.addEventListener("DOMContentLoaded", function (e) {
+                    doc.body.style.fontSize = "16px";
+                }, false);
+            }
+        })(750, 750);
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- header start -->
+        <header>
+            <div class="heading clearfix">
+                <h1>动态</h1>
+                <a href="" class="more search">
+                    <img src="img/index/search.png" alt="search" class="search">
+                </a>
+            </div>
+            <ul class="nav_header">
+                <li><a class="header-active">关注</a></li>
+                <li><a class="">热门</a></li>
+            </ul>
+        </header>
+        <!-- header end -->
+        <!-- content start  -->
+        <div class="content">
+            <div class="following content-active">
+                <div class="banner clearfix">
+                    <ul class="like clearfix">
+                        <li>
+                            <img src="img/dynamic/ajiner.png" alt="">
+                            <p>阿阿阿金儿</p>
+                        </li>
+                        <li>
+                            <img src="img/dynamic/naiyoudianzhang.png" alt="">
+                            <p>奶油店长</p>
+                        </li>
+                        <li>
+                            <img src="img/dynamic/xiaoxiaobaopiqi.png" alt="">
+                            <p>小小暴脾气</p>
+                        </li>
+                        <li>
+                            <img src="img/dynamic/duodagangganggei.png" alt="">
+                            <p>多大刚刚给</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="comment">
+                    <div class="comment-content clearfix">
+                        <div class="avatar">
+                            <div class="avatarImg">
+                                <img src="img/dynamic/luomandikesier.png" alt="" class="avatar">
+                            </div>
+                        </div>
+                        <div class="userInfo">
+                            <div class="top clearfix">
+                                <p class="name">罗曼蒂克丝儿</p>
+                                <p class="comment-time">昨天 21:01</p>
+                            </div>
+                            <div class="bottom">
+                                <p>
+                                    生活坏到一定程度就会好起来，因为它无法更坏。努 力过后，才知道许多事情，坚持坚持，就过来了。有 些烦恼，丢掉了，才会有云淡风轻的机会。
+                                </p>
+                                <img src="" alt="">
+                            </div>
+                            <div class="operate clearfix">
+                                <p class="saw"><img src="img/dynamic/viewed.png" alt="">&nbsp;31,792</p>
+                                <p class="reply"><img src="img/dynamic/comment.png" alt="">&nbsp;108</p>
+                                <p class="liked"><img src="img/dynamic/liked.png" alt="">&nbsp;64</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="comment">
+                    <div class="comment-content clearfix">
+                        <div class="avatar">
+                            <div class="avatarImg">
+                                <img src="img/dynamic/gululudida.png" alt="" class="avatar">
+                            </div>
+                        </div>
+                        <div class="userInfo">
+                            <div class="top clearfix">
+                                <p class="name">咕噜噜滴答</p>
+                                <p class="comment-time">昨天 21:01</p>
+                            </div>
+                            <div class="bottom">
+                                <p>
+                                        什么时候我们开始无法像孩子一样肆意地大呼小叫了 呢？心里的小情绪堆积的想山一样高，直到溢出来。 与其如此，不如永远像孩子一样。
+                                </p>
+                                <img src="img/dynamic/vedio.png" alt="">
+                            </div>
+                            <div class="operate clearfix">
+                                <p class="saw"><img src="img/dynamic/viewed.png" alt="">&nbsp;31,792</p>
+                                <p class="reply"><img src="img/dynamic/comment.png" alt="">&nbsp;108</p>
+                                <p class="liked"><img src="img/dynamic/liked.png" alt="">&nbsp;64</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="comment">
+                    <div class="comment-content clearfix">
+                        <div class="avatar">
+                            <div class="avatarImg">
+                                <img src="img/dynamic/xiaongmaobushixiangmao.png" alt="" class="avatar">
+                            </div>
+                        </div>
+                        <div class="userInfo">
+                            <div class="top clearfix">
+                                <p class="name">熊猫不是熊猫</p>
+                                <p class="comment-time">昨天 21:01</p>
+                            </div>
+                            <div class="bottom">
+                                <p>
+                                        傻子吧你，不会自己去看，脑子瓦塔掉啦，价钱不都 在那写着呢么，会买就买，不会买赶紧走开，去找个 凉快的地方呆一呆，好吧亲，现在...
+                                </p>
+                                <img src="" alt="">
+                            </div>
+                            <div class="operate clearfix">
+                                <p class="saw"><img src="img/dynamic/viewed.png" alt="">&nbsp;31,792</p>
+                                <p class="reply"><img src="img/dynamic/comment.png" alt="">&nbsp;108</p>
+                                <p class="liked"><img src="img/dynamic/liked.png" alt="">&nbsp;64</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- content end  -->
+        <!-- <div class="blank" style="height: 50rem"></div> -->
+        <!-- footer-nav start -->
+        <nav>
+            <ul class="nav_footer clearfix">
+                <li><a href="/index.html"><span class="iconfont icon-xuanzhongshangcheng"></span></a></li>
+                <li><a href="/category.html"><span class="iconfont icon-category"></span></a></li>
+                <li><a href=""><span class="iconfont icon-dongtai footer-active"></span></a></li>
+                <li><a href="/login.html"><span class="iconfont icon-me"></span></a></li>
+            </ul>
+        </nav>
+        <!-- footer-nav end -->
+    </div>
+</body>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/main.js"></script>
+
+</html>

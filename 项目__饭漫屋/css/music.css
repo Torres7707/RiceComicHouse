@@ -1,0 +1,249 @@
+.content .recommend {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+.content .recommend .banner {
+  width: 100%;
+  height: 3.5rem;
+  background: linear-gradient(to bottom, #fedb19, #fba310);
+  border-radius: 0.07rem;
+  position: relative;
+  box-shadow: 0 12px 24px -12px #cccccc;
+}
+.content .recommend .banner img {
+  float: left;
+  margin-left: 50%;
+  width: auto;
+  height: 3.5rem;
+  transform: translateX(-50%) scale(1.1);
+}
+.content .recommend .mostPopular,
+.content .recommend .newest {
+  width: 100%;
+  height: auto;
+  margin-top: 0.4rem;
+  padding: 0.25rem 0;
+}
+.content .recommend .mostPopular .title,
+.content .recommend .newest .title {
+  width: 100%;
+  height: 0.32rem;
+  line-height: 0.32rem;
+}
+.content .recommend .mostPopular .title h4,
+.content .recommend .newest .title h4 {
+  float: left;
+  font-size: 0.32rem;
+  padding-left: 0.15rem;
+  color: #76a8fc;
+  font-weight: 400;
+  border-left: 0.08rem solid #76a8fc;
+}
+.content .recommend .mostPopular .mostPopular_content,
+.content .recommend .newest .mostPopular_content,
+.content .recommend .mostPopular .newest_content,
+.content .recommend .newest .newest_content {
+  width: 100%;
+  height: auto;
+  padding: 0.25rem 0 0;
+}
+.content .recommend .mostPopular .mostPopular_content .swiper,
+.content .recommend .newest .mostPopular_content .swiper,
+.content .recommend .mostPopular .newest_content .swiper,
+.content .recommend .newest .newest_content .swiper {
+  width: 500%;
+}
+.content .recommend .mostPopular .mostPopular_content .swiper .part,
+.content .recommend .newest .mostPopular_content .swiper .part,
+.content .recommend .mostPopular .newest_content .swiper .part,
+.content .recommend .newest .newest_content .swiper .part {
+  width: 16%;
+  background: #ffffff;
+  border-radius: 0.05rem;
+  margin-right: 0.25rem;
+  box-shadow: 0 12px 24px -12px #cccccc;
+  float: left;
+}
+.content .recommend .mostPopular .mostPopular_content .swiper .part img,
+.content .recommend .newest .mostPopular_content .swiper .part img,
+.content .recommend .mostPopular .newest_content .swiper .part img,
+.content .recommend .newest .newest_content .swiper .part img {
+  width: 100%;
+}
+.content .recommend .mostPopular .mostPopular_content .swiper .part .descrip,
+.content .recommend .newest .mostPopular_content .swiper .part .descrip,
+.content .recommend .mostPopular .newest_content .swiper .part .descrip,
+.content .recommend .newest .newest_content .swiper .part .descrip {
+  width: 100%;
+  padding: 0.15rem 0.25rem;
+}
+.content .recommend .mostPopular .mostPopular_content .swiper .part .descrip .top,
+.content .recommend .newest .mostPopular_content .swiper .part .descrip .top,
+.content .recommend .mostPopular .newest_content .swiper .part .descrip .top,
+.content .recommend .newest .newest_content .swiper .part .descrip .top {
+  width: 100%;
+}
+.content .recommend .mostPopular .mostPopular_content .swiper .part .descrip .top p.name,
+.content .recommend .newest .mostPopular_content .swiper .part .descrip .top p.name,
+.content .recommend .mostPopular .newest_content .swiper .part .descrip .top p.name,
+.content .recommend .newest .newest_content .swiper .part .descrip .top p.name {
+  float: left;
+  font-size: 0.28rem;
+  line-height: 0.32rem;
+  color: #7a8699;
+}
+.content .recommend .mostPopular .mostPopular_content .swiper .part .descrip .top p.time,
+.content .recommend .newest .mostPopular_content .swiper .part .descrip .top p.time,
+.content .recommend .mostPopular .newest_content .swiper .part .descrip .top p.time,
+.content .recommend .newest .newest_content .swiper .part .descrip .top p.time {
+  float: right;
+  font-size: 0.2rem;
+  line-height: 0.2rem;
+  color: #76a8fc;
+  margin-top: 0.12rem;
+}
+.content .recommend .mostPopular .mostPopular_content .swiper .part .descrip .top p.time img,
+.content .recommend .newest .mostPopular_content .swiper .part .descrip .top p.time img,
+.content .recommend .mostPopular .newest_content .swiper .part .descrip .top p.time img,
+.content .recommend .newest .newest_content .swiper .part .descrip .top p.time img {
+  width: 0.3rem;
+  height: 0.2rem;
+}
+.content .recommend .mostPopular .mostPopular_content .swiper .part .descrip .middle,
+.content .recommend .newest .mostPopular_content .swiper .part .descrip .middle,
+.content .recommend .mostPopular .newest_content .swiper .part .descrip .middle,
+.content .recommend .newest .newest_content .swiper .part .descrip .middle {
+  width: 100%;
+  margin-top: 0.15rem;
+}
+.content .recommend .mostPopular .mostPopular_content .swiper .part .descrip .middle img,
+.content .recommend .newest .mostPopular_content .swiper .part .descrip .middle img,
+.content .recommend .mostPopular .newest_content .swiper .part .descrip .middle img,
+.content .recommend .newest .newest_content .swiper .part .descrip .middle img {
+  float: left;
+  width: 0.9rem;
+}
+.content .recommend .mostPopular .mostPopular_content .swiper .part .descrip .middle p,
+.content .recommend .newest .mostPopular_content .swiper .part .descrip .middle p,
+.content .recommend .mostPopular .newest_content .swiper .part .descrip .middle p,
+.content .recommend .newest .newest_content .swiper .part .descrip .middle p {
+  font-size: 0.2rem;
+  line-height: 0.2rem;
+  color: #fedb19;
+  float: left;
+  margin-left: 1rem;
+}
+.content .recommend .mostPopular .mostPopular_content .swiper .part .descrip .bottom,
+.content .recommend .newest .mostPopular_content .swiper .part .descrip .bottom,
+.content .recommend .mostPopular .newest_content .swiper .part .descrip .bottom,
+.content .recommend .newest .newest_content .swiper .part .descrip .bottom {
+  width: 100%;
+  margin-top: 0.1rem;
+}
+.content .recommend .mostPopular .mostPopular_content .swiper .part .descrip .bottom p,
+.content .recommend .newest .mostPopular_content .swiper .part .descrip .bottom p,
+.content .recommend .mostPopular .newest_content .swiper .part .descrip .bottom p,
+.content .recommend .newest .newest_content .swiper .part .descrip .bottom p {
+  height: 0.3rem;
+  font-size: 0.24rem;
+  line-height: 0.3rem;
+}
+.content .serialComic,
+.content .endComic {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+.content .serialComic .drama,
+.content .endComic .drama {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  border-radius: 0.05rem;
+  padding: 0.25rem 0;
+  box-shadow: 0 12px 24px -12px #cccccc;
+}
+.content .serialComic .drama .title,
+.content .endComic .drama .title {
+  width: 100%;
+  height: 0.32rem;
+  line-height: 0.32rem;
+}
+.content .serialComic .drama .title h4,
+.content .endComic .drama .title h4 {
+  float: left;
+  font-size: 0.32rem;
+  padding-left: 0.15rem;
+  color: #76a8fc;
+  font-weight: 400;
+  border-left: 0.08rem solid #76a8fc;
+}
+.content .serialComic .drama .title .filter,
+.content .endComic .drama .title .filter {
+  width: 0.26rem;
+  height: 0.3rem;
+  float: right;
+  margin-right: 0.2rem;
+}
+.content .serialComic .drama .title span,
+.content .endComic .drama .title span {
+  float: right;
+  font-size: 0.2rem;
+  color: #b8c9e5;
+}
+.content .serialComic .drama .drama_content,
+.content .endComic .drama .drama_content {
+  width: 100%;
+  height: auto;
+  padding: 0.25rem 0.2rem 0;
+}
+.content .serialComic .drama .drama_content .row,
+.content .endComic .drama .drama_content .row {
+  width: 100%;
+  height: auto;
+}
+.content .serialComic .drama .drama_content .row .part,
+.content .endComic .drama .drama_content .row .part {
+  float: left;
+  width: 33.33333%;
+  height: auto;
+  padding: 0 0.12rem 0.24rem;
+  text-align: center;
+}
+.content .serialComic .drama .drama_content .row .part a,
+.content .endComic .drama .drama_content .row .part a {
+  display: block;
+}
+.content .serialComic .drama .drama_content .row .part a img,
+.content .endComic .drama .drama_content .row .part a img {
+  width: 100%;
+}
+.content .serialComic .drama .drama_content .row .part a p,
+.content .endComic .drama .drama_content .row .part a p {
+  text-align: left !important;
+}
+.content .serialComic .drama .drama_content .row .part a p.name,
+.content .endComic .drama .drama_content .row .part a p.name {
+  width: 74.3%;
+  float: left;
+  font-size: 0.24rem;
+  line-height: 0.30rem;
+  color: #7a8699;
+}
+.content .serialComic .drama .drama_content .row .part a p.score,
+.content .endComic .drama .drama_content .row .part a p.score {
+  width: 25.6%;
+  float: left;
+  font-size: 0.2rem;
+  line-height: 0.30rem;
+  color: #ffd97c;
+}
+.content .serialComic .drama .drama_content .row .part a p.status,
+.content .endComic .drama .drama_content .row .part a p.status {
+  float: left;
+  width: 100%;
+  font-size: 0.2rem;
+  line-height: 0.30rem;
+  color: #cbd7ec;
+}

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/base1.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <title>Index</title>
+    <script>
+        (function (designWidth, maxWidth) {
+            var doc = document,
+                win = window;
+            var docEl = doc.documentElement;
+            var tid;
+            var rootItem, rootStyle;
+
+            function refreshRem() {
+                var width = docEl.getBoundingClientRect().width;
+                if (!maxWidth) {
+                    maxWidth = 540;
+                };
+                if (width > maxWidth) {
+                    width = maxWidth;
+                }
+                //与淘宝做法不同，直接采用简单的rem换算方法1rem=100px
+                var rem = width * 100 / designWidth;
+                //兼容UC开始
+                rootStyle = "html{font-size:" + rem + 'px !important}';
+                rootItem = document.getElementById('rootsize') || document.createElement("style");
+                if (!document.getElementById('rootsize')) {
+                    document.getElementsByTagName("head")[0].appendChild(rootItem);
+                    rootItem.id = 'rootsize';
+                }
+                if (rootItem.styleSheet) {
+                    rootItem.styleSheet.disabled || (rootItem.styleSheet.cssText = rootStyle)
+                } else {
+                    try {
+                        rootItem.innerHTML = rootStyle
+                    } catch (f) {
+                        rootItem.innerText = rootStyle
+                    }
+                }
+                //兼容UC结束
+                docEl.style.fontSize = rem + "px";
+            };
+            refreshRem();
+
+            win.addEventListener("resize", function () {
+                clearTimeout(tid); //防止执行两次
+                tid = setTimeout(refreshRem, 300);
+            }, false);
+
+            win.addEventListener("pageshow", function (e) {
+                if (e.persisted) { // 浏览器后退的时候重新计算
+                    clearTimeout(tid);
+                    tid = setTimeout(refreshRem, 300);
+                }
+            }, false);
+
+            if (doc.readyState === "complete") {
+                doc.body.style.fontSize = "16px";
+            } else {
+                doc.addEventListener("DOMContentLoaded", function (e) {
+                    doc.body.style.fontSize = "16px";
+                }, false);
+            }
+        })(750, 750);
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- header start -->
+        <header>
+            <div class="heading clearfix">
+                <h1>首页</h1>
+                <a href="" class="more search">
+                    <img src="img/index/search.png" alt="search" class="search">
+                </a>
+            </div>
+            <ul class="nav_header">
+                <li><a class="header-active">推荐</a></li>
+                <li><a class="">订阅</a></li>
+                <li><a class="">排行榜</a></li>
+            </ul>
+        </header>
+        <!-- header end -->
+        <!-- content start  -->
+        <div class="content">
+            <div class="recommend content-active">
+                <div class="banner clearfix">
+                    <img src="img/index/banner.png" alt="">
+                    <h4>独家正版</h4>
+                    <p>2017年12月1日开始放映</p>
+                </div>
+                <div class="middle clearfix">
+                    <div class="left clearfix">
+                        <div class="left-l">
+                            <img src="img/index/pic (2).png" alt="">
+                        </div>
+                        <div class="left-r">
+                            <div class="top">
+                                <div class="title clearfix">
+                                    <h4>熊猫不是熊猫</h4>
+                                    <a href=""></a>
+                                </div>
+                                <p>这部动漫一开始我是不太看好 的。因为开场过于平庸……</p>
+                            </div>
+                            <div class="bottom clearfix">
+                                <img src="img/index/1.png" alt="" class="img1">
+                                <img src="img/index/2.png" alt="" class="img2">
+                                <img src="img/index/3.png" alt="" class="img3">
+                                <img src="img/index/3.png" alt="" class="img4">
+                            </div>
+                            <div class="viewed">
+                                <p class="viewed">26,824阅读</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="icon">
+                            <a href=""><img src="img/index/comic (2).png" alt=""></a>
+                            <a href=""><img src="img/index/music (2).png" alt=""></a>
+                            <a href=""><img src="img/index/pic (2).png" alt=""></a>
+                        </div>
+                        <a href="" class="more"></a>
+                    </div>
+                </div>
+
+                <div class="drama">
+                    <div class="title clearfix">
+                        <h4>番剧</h4>
+                        <img src="img/index/filter.png" alt="" class="filter">
+                    </div>
+                    <div class="drama_content clearfix">
+                        <div class="left">
+                            <img src="img/index/drama1.png" alt="">
+                        </div>
+                        <div class="right">
+                            <img src="img/index/drama2.png" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="subscription">
+                <div class="banner clearfix">
+                    <img src="img/index/KungFuPanda.png" alt="">
+                </div>
+                <div class="drama">
+                    <div class="drama-content clearfix">
+                        <div class="left">
+                            <img src="img/index/tv.png" alt="">
+                        </div>
+                        <div class="right">
+                            <div class="top">
+                                <div class="title clearfix">
+                                    <h4>紫罗兰的花园</h4>
+                                    <a href=""></a>
+                                </div>
+                            </div>
+                            <div class="middle clearfix">
+                                <div class="middle-l">
+                                    <img src="img/index/drama3.png" alt="">
+                                </div>
+                                <div class="middle-r">
+                                    <p class="heading">第一话</p>
+                                    <p class="time">3分钟前</p>
+                                    <p class="comment">2000人评论&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4000弹幕</p>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <p class="viewed">26,824 观看</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="music">
+                    <div class="music-content clearfix">
+                        <div class="left">
+                            <img src="img/index/music (2).png" alt="">
+                        </div>
+                        <div class="right">
+                            <div class="top">
+                                <div class="title clearfix">
+                                    <h4>《罪恶王冠》原声CD</h4>
+                                    <a href=""></a>
+                                </div>
+                            </div>
+                            <div class="middle">
+                                <p>由泽野弘之大神所创作的歌曲，被各网友成为核爆单曲拔剑单曲…</p>
+                            </div>
+                            <div class="bottom">
+                                <img src="img/index/m1.png" alt="">
+                                <img src="img/index/m2.png" alt="">
+                                <img src="img/index/m3.png" alt="">
+                                <img src="img/index/m4.png" alt="">
+                                <img src="img/index/m5.png" alt="">
+                            </div>
+                            <div class="viewed">
+                                <p class="viewed">26,824 观看</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="leaderboard">
+                <div class="top clearfix">
+                    <div class="part">
+                        <img src="img/index/daojianshenyu.png" alt="">
+                        <div class="title">
+                            <p class="name">刀剑神域</p>
+                            <p class="votes">54,739</p>
+                        </div>
+                    </div>
+                    <div class="part first">
+                        <img src="img/index/onepiece.png" alt="">
+                        <div class="title">
+                            <p class="name">海贼王</p>
+                            <p class="votes">161,222</p>
+                        </div>
+                    </div>
+                    <div class="part">
+                        <img src="img/index/yaojingweiba.png" alt="">
+                        <div class="title">
+                            <p class="name">妖精的尾巴</p>
+                            <p class="votes">43,874</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="middle">
+                    <h2 class="rank">近一周播放排行榜</h2>
+                    <p class="drama"><a href="">番剧 <span class="iconfont icon-xiala-copy"></span></a></p>
+                </div>
+                <div class="bottom">
+                    <ul class="dramaList">
+                        <li class="clearfix">
+                            <img src="img/index/xiaohuangren.png" alt="">
+                            <div class="descrip">
+                                <p class="name">小黄人</p>
+                                <p class="status">已完结</p>
+                            </div>
+                            <p class="view">42,888</p>
+                        </li>
+                        <li class="clearfix">
+                            <img src="img/index/zuiewangguan.png" alt="">
+                            <div class="descrip">
+                                <p class="name">罪恶王冠</p>
+                                <p class="status">已完结</p>
+                            </div>
+                            <p class="view">42,736</p>
+                        </li>
+                        <li class="clearfix">
+                            <img src="img/index/huoyingrenzhe.png" alt="">
+                            <div class="descrip">
+                                <p class="name">火影忍者</p>
+                                <p class="status">已完结</p>
+                            </div>
+                            <p class="view">41,118</p>
+                        </li>
+                        <li class="clearfix">
+                            <img src="img/index/OVERLORDⅡ.png" alt="">
+                            <div class="descrip">
+                                <p class="name">OVERLORDⅡ</p>
+                                <p class="status status-active">连载中</p>
+                            </div>
+                            <p class="view">39,967</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- content end  -->
+        <!-- <div class="blank" style="height: 50rem"></div> -->
+        <!-- footer-nav start -->
+        <nav>
+            <ul class="nav_footer clearfix">
+                <li><a href=""><span class="iconfont icon-xuanzhongshangcheng footer-active"></span></a></li>
+                <li><a href="/category.html"><span class="iconfont icon-category"></span></a></li>
+                <li><a href="/dynamic.html"><span class="iconfont icon-dongtai"></span></a></li>
+                <li><a href="/login.html"><span class="iconfont icon-me"></span></a></li>
+            </ul>
+        </nav>
+        <!-- footer-nav end -->
+    </div>
+</body>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/main.js"></script>
+
+</html>

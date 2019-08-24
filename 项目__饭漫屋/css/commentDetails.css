@@ -1,0 +1,240 @@
+header {
+  padding-bottom: 70% !important;
+  background: url(../img/commentDetails/header.png) no-repeat !important;
+  background-size: 100% 100% !important;
+  position: relative !important;
+}
+.content {
+  top: -1.75rem !important;
+}
+.content .comment-header {
+  width: 100%;
+  height: auto;
+  background-color: #ffffff;
+  border-radius: 0.07rem;
+  padding: 0.5rem 0.45rem;
+  margin-bottom: 0.25rem;
+  box-shadow: 0 12px 20px -12px #cccccc;
+}
+.content .comment-header .left {
+  width: 66%;
+  height: 100%;
+  float: left;
+}
+.content .comment-header .left p.name {
+  font-size: 0.32rem;
+  line-height: 0.32rem;
+  color: #3d434c;
+}
+.content .comment-header .left p.region,
+.content .comment-header .left p.status,
+.content .comment-header .left p.time {
+  margin-top: 0.2rem;
+  font-size: 0.24rem;
+  line-height: 0.24rem;
+  color: #7a8799;
+}
+.content .comment-header .right {
+  width: 34%;
+  height: 100%;
+  float: left;
+}
+.content .comment-header .right p.score {
+  font-size: 0.32rem;
+  line-height: 0.32rem;
+  color: #ffbf24;
+  text-align: right;
+}
+.content .comment-header .right p.collect,
+.content .comment-header .right p.star,
+.content .comment-header .right p.comment {
+  margin-top: 0.2rem;
+  font-size: 0.24rem;
+  line-height: 0.24rem;
+  color: #7a8799;
+}
+.content .comment-header .right p.collect img,
+.content .comment-header .right p.star img,
+.content .comment-header .right p.comment img {
+  height: 0.24rem;
+  margin-left: 0.1rem;
+}
+.content .last-time {
+  width: 100%;
+  height: auto;
+  background-color: #ffffff;
+  border-radius: 0.07rem;
+  box-shadow: 0 12px 20px -12px #cccccc;
+  padding: 0.2rem 0.45rem;
+  margin-bottom: 0.25rem;
+}
+.content .last-time .left {
+  width: 66%;
+  height: 100%;
+  float: left;
+}
+.content .last-time .left p.title {
+  font-size: 0.32rem;
+  line-height: 0.32rem;
+  color: #3d434c;
+}
+.content .last-time .left p.playNum {
+  margin-top: 0.2rem;
+  font-size: 0.24rem;
+  line-height: 0.24rem;
+  color: #7a8799;
+}
+.content .last-time .right {
+  width: 34%;
+  height: 100%;
+  float: left;
+  text-align: center;
+}
+.content .last-time .right p.play {
+  font-size: 0.24rem;
+  line-height: 0.24rem;
+  margin-top: 0.2rem;
+}
+.content .last-time .right p.play a {
+  display: block;
+  color: #76a8fc;
+}
+.content .last-time .right p.play a img {
+  width: 0.1rem;
+  margin-right: 0.15rem;
+}
+.content .introduction {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  border-radius: 0.05rem;
+  padding: 0.25rem 0;
+  box-shadow: 0 12px 24px -12px #cccccc;
+  margin-bottom: 0.25rem;
+}
+.content .introduction .title {
+  width: 100%;
+  height: 0.32rem;
+  line-height: 0.32rem;
+}
+.content .introduction .title h4 {
+  float: left;
+  font-size: 0.32rem;
+  padding-left: 0.15rem;
+  color: #76a8fc;
+  font-weight: 400;
+  border-left: 0.08rem solid #76a8fc;
+}
+.content .introduction .title .refresh {
+  width: 0.32rem;
+  float: right;
+  margin-right: 0.2rem;
+}
+.content .introduction .title span {
+  float: right;
+  font-size: 0.2rem;
+  color: #b8c9e5;
+}
+.content .introduction .introduction_content {
+  width: 100%;
+  height: auto;
+  padding: 0.2rem 0.45rem 0;
+}
+.content .introduction .introduction_content p {
+  font-size: 0.24rem;
+  color: #3d434c;
+}
+.content .bubble {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  border-radius: 0.05rem;
+  padding: 0.25rem 0;
+  box-shadow: 0 12px 24px -12px #cccccc;
+  margin-bottom: 0.25rem;
+}
+.content .bubble .title {
+  width: 100%;
+  height: 0.32rem;
+  line-height: 0.32rem;
+}
+.content .bubble .title h4 {
+  float: left;
+  font-size: 0.32rem;
+  padding-left: 0.15rem;
+  color: #76a8fc;
+  font-weight: 400;
+}
+.content .bubble .title h4 img {
+  width: 0.32rem;
+}
+.content .bubble .title .refresh {
+  width: 0.32rem;
+  float: right;
+  margin-right: 0.2rem;
+}
+.content .bubble .title span {
+  float: right;
+  font-size: 0.2rem;
+  color: #b8c9e5;
+}
+.content .bubble .bubble_content {
+  width: 100%;
+  height: auto;
+  padding: 0.2rem 0.45rem 0;
+}
+.content .bubble .bubble_content .user {
+  width: 100%;
+}
+.content .bubble .bubble_content .user p.userName {
+  width: 66%;
+  font-size: 0.24rem;
+  line-height: 0.4rem;
+  color: #76a8fc;
+  float: left;
+}
+.content .bubble .bubble_content .user p.userName img {
+  width: 0.4rem;
+}
+.content .bubble .bubble_content .user p.time {
+  width: 34%;
+  font-size: 0.24rem;
+  line-height: 0.4rem;
+  color: #b8c9e5;
+  float: left;
+  text-align: right;
+}
+.content .bubble .bubble_content img.little-star {
+  width: 0.65rem;
+}
+.content .bubble .bubble_content p.name {
+  width: 100%;
+  font-size: 0.24rem;
+  color: #3d434c;
+}
+.content .bubble .bubble_content p.comment {
+  width: 100%;
+  font-size: 0.24rem;
+  color: #7a8799;
+}
+.sendBubble {
+  width: 100%;
+  height: 1rem;
+  background-color: #ffffff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 -12px 20px -12px #cccccc;
+  text-align: center;
+  line-height: 1rem;
+}
+.sendBubble a {
+  display: inline-block;
+  width: 2rem;
+  height: 0.5rem;
+  background-color: #76a8fc;
+  border-radius: 0.03rem;
+  font-size: 0.24rem;
+  color: #ffffff;
+  line-height: 0.5rem;
+}

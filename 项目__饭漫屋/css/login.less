@@ -1,0 +1,134 @@
+header {
+    height: 1.2rem !important;
+}
+
+.content {
+    top: 0 !important;
+
+    .logo {
+        width: 100%;
+        margin-top: 1.25rem;
+        text-align: center;
+
+        img {
+            width: 1.86rem;
+            height: 1.86rem;
+        }
+    }
+
+    .login {
+        width: 100%;
+        margin-top: 0.9rem;
+
+        p.username,
+        p.password {
+            width: 5.3rem;
+            height: 0.8rem;
+            background-color: #ffffff;
+            box-shadow: 0 12px 24px -12px #cfdff9;
+            border-radius: 0.4rem;
+            margin: 0 auto 0.25rem;
+            ;
+
+            .img1 {
+                width: 0.28rem;
+                margin-left: 0.35rem;
+                margin-top: 0.25rem;
+                float: left;
+            }
+
+            input {
+                float: left;
+                width: 3.5rem;
+                height: 0.6rem;
+                margin-top: 0.1rem;
+                margin-left: 0.2rem;
+                font-size: 0.32rem;
+            }
+
+            .img2 {
+                width: 0.31rem;
+                margin-top: 0.3rem;
+                margin-left: 0.35rem;
+                float: left;
+            }
+        }
+
+        div.remember {
+            width: 5.3rem;
+            margin: 0.25rem auto 0;
+
+            .left {
+                float: left;
+
+                #rememberStatus {
+                    display: none;
+                }
+
+                label {
+                    font-size: 0.23rem;
+                    line-height: 0.26rem;
+                    color: #cccccc;
+                }
+
+                #rememberStatus+label:before {
+                    content: "";
+                    float: left;
+                    width: 0.26rem;
+                    height: 0.26rem;
+                    border: 1px solid gainsboro;
+                    border-radius: 5px;
+                    background: #FFFFFF;
+                    margin-left: 0.15rem;
+                    margin-right: 0.15rem;
+                }
+
+                #rememberStatus:checked+label:before {
+                    background: url("../img/login/对勾.png") no-repeat;
+                    background-size: 0.26rem 0.26rem;
+                }
+            }
+
+            .right {
+                float: right;
+
+                p {
+                    font-size: 0.23rem;
+                    line-height: 0.26rem;
+                    color: #82b0fc;
+                }
+
+            }
+        }
+        p.loginButton {
+            width: 5.3rem;
+            height: 0.8rem;
+            background-color: #82b0fc;
+            color: #ffffff;
+            box-shadow: 0 12rem 30rem -12rem #cfdff9;
+            border-radius: 0.4rem;
+            margin: 0.5rem auto 0;
+            text-align: center;
+            line-height: 0.8rem;
+            font-size: 0.3rem;
+        }
+    }
+        .thirdPart {
+            width: 5.3rem;
+            height: 1.2rem;
+            margin: 1.4rem auto 0;
+
+            img {
+                width: 1.18rem;
+                height: 1.18rem;
+            }
+            .weibo {
+                margin-left: 0.8rem;
+            }
+            .mobil {
+                margin-left: 0.8rem;
+            }
+        }
+
+
+}

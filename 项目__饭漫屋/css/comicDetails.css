@@ -1,0 +1,195 @@
+.content .comic-title {
+  width: 100%;
+  padding: 0.2rem 0.5rem;
+  background-color: #ffffff;
+  border-radius: 0.07rem;
+  box-shadow: 0 12px 24px -12px #cccccc;
+  margin-bottom: 0.2rem;
+}
+.content .comic-title div.left {
+  width: 38%;
+  height: 100%;
+  float: left;
+}
+.content .comic-title div.left img {
+  height: 2.2rem;
+  transform: scale(1.4);
+  transform-origin: bottom left;
+}
+.content .comic-title div.right {
+  width: 62%;
+  height: 100%;
+  float: left;
+}
+.content .comic-title div.right p.author {
+  font-size: 0.24rem;
+  color: #7a8699;
+}
+.content .comic-title div.right p.author a {
+  display: inline-block;
+  border-bottom: 0.02rem solid #76a8fc;
+  color: #76a8fc;
+  cursor: pointer;
+}
+.content .comic-title div.right p.tag {
+  margin-top: 0.1rem;
+  font-size: 0.24rem;
+  color: #7a8699;
+}
+.content .comic-title div.right p.tag a {
+  display: inline-block;
+  border-bottom: 0.02rem solid #76a8fc;
+  color: #76a8fc;
+  cursor: pointer;
+}
+.content .comic-title div.right p.popularity {
+  margin-top: 0.1rem;
+  font-size: 0.24rem;
+  color: #7a8699;
+}
+.content .comic-title div.right p.subscrip {
+  margin-top: 0.12rem;
+  font-size: 0.24rem;
+  color: #7a8699;
+}
+.content .comic-title div.right div.btn {
+  width: 100%;
+  margin-top: 0.1rem;
+}
+.content .comic-title div.right div.btn a {
+  display: inline-block;
+  width: 1.2rem;
+  height: 0.4rem;
+  background-color: #76a8fc;
+  border-radius: 0.05rem;
+  text-align: center;
+  line-height: 0.4rem;
+  font-size: 0.24rem;
+  color: #ffffff;
+  margin-right: 0.35rem;
+}
+.content .comic-details {
+  width: 100%;
+  height: auto;
+  border-radius: 0.07rem;
+  background-color: #ffffff;
+}
+.content .comic-details .heading {
+  width: 100%;
+  height: 0.65rem;
+  box-shadow: 0 12px 24px -12px #cccccc;
+}
+.content .comic-details .heading p {
+  display: inline-block;
+  width: 33.333333%;
+  font-size: 0.24rem;
+  color: #7a8699;
+  text-align: center;
+  line-height: 0.65rem;
+}
+.content .comic-details .num {
+  width: 100%;
+  padding: 0.3rem 0 0 0.45rem;
+  box-shadow: 0 12px 24px -12px #cccccc;
+}
+.content .comic-details .num p {
+  display: block;
+  float: left;
+  width: 0.8rem;
+  height: 0.5rem;
+  border: 0.01rem solid #7a8699;
+  border-radius: 0.03rem;
+  font-size: 0.24rem;
+  color: #7a8699;
+  text-align: center;
+  line-height: 0.5rem;
+  margin: 0 0.4rem 0.3rem 0;
+  cursor: pointer;
+}
+.content .comic-details .bottom {
+  width: 100%;
+  height: 0.65rem;
+  box-shadow: 0 12px 24px -12px #cccccc;
+}
+.content .comic-details .bottom p {
+  font-size: 0.24rem;
+  color: #7a8699;
+  text-align: center;
+  line-height: 0.65rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.content .drama {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  margin-top: 0.4rem;
+  border-radius: 0.05rem;
+  padding: 0.25rem 0;
+  box-shadow: 0 12px 24px -12px #cccccc;
+}
+.content .drama .title {
+  width: 100%;
+  height: 0.32rem;
+  line-height: 0.32rem;
+}
+.content .drama .title h4 {
+  float: left;
+  font-size: 0.32rem;
+  padding-left: 0.15rem;
+  color: #76a8fc;
+  font-weight: 400;
+  border-left: 0.08rem solid #76a8fc;
+}
+.content .drama .title .calendar {
+  width: 0.26rem;
+  height: 0.3rem;
+  float: right;
+  margin-right: 0.2rem;
+}
+.content .drama .drama_content {
+  width: 100%;
+  height: auto;
+  padding: 0.25rem 0.2rem 0;
+}
+.content .drama .drama_content .row {
+  width: 100%;
+  height: auto;
+}
+.content .drama .drama_content .row .part {
+  float: left;
+  width: 33.33333%;
+  height: auto;
+  padding: 0 0.12rem 0.24rem;
+  text-align: center;
+}
+.content .drama .drama_content .row .part a {
+  display: block;
+}
+.content .drama .drama_content .row .part a img {
+  width: 100%;
+}
+.content .drama .drama_content .row .part a p {
+  text-align: left !important;
+}
+.content .drama .drama_content .row .part a p.name {
+  width: 74.3%;
+  float: left;
+  font-size: 0.24rem;
+  line-height: 0.30rem;
+  color: #7a8699;
+}
+.content .drama .drama_content .row .part a p.score {
+  width: 25.6%;
+  float: left;
+  font-size: 0.2rem;
+  line-height: 0.30rem;
+  color: #ffd97c;
+}
+.content .drama .drama_content .row .part a p.status {
+  float: left;
+  width: 100%;
+  font-size: 0.2rem;
+  line-height: 0.30rem;
+  color: #cbd7ec;
+}

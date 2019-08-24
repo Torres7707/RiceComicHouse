@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/base1.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/store.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <title>store</title>
+    <script>
+        (function (designWidth, maxWidth) {
+            var doc = document,
+                win = window;
+            var docEl = doc.documentElement;
+            var tid;
+            var rootItem, rootStyle;
+
+            function refreshRem() {
+                var width = docEl.getBoundingClientRect().width;
+                if (!maxWidth) {
+                    maxWidth = 540;
+                };
+                if (width > maxWidth) {
+                    width = maxWidth;
+                }
+                //与淘宝做法不同，直接采用简单的rem换算方法1rem=100px
+                var rem = width * 100 / designWidth;
+                //兼容UC开始
+                rootStyle = "html{font-size:" + rem + 'px !important}';
+                rootItem = document.getElementById('rootsize') || document.createElement("style");
+                if (!document.getElementById('rootsize')) {
+                    document.getElementsByTagName("head")[0].appendChild(rootItem);
+                    rootItem.id = 'rootsize';
+                }
+                if (rootItem.styleSheet) {
+                    rootItem.styleSheet.disabled || (rootItem.styleSheet.cssText = rootStyle)
+                } else {
+                    try {
+                        rootItem.innerHTML = rootStyle
+                    } catch (f) {
+                        rootItem.innerText = rootStyle
+                    }
+                }
+                //兼容UC结束
+                docEl.style.fontSize = rem + "px";
+            };
+            refreshRem();
+
+            win.addEventListener("resize", function () {
+                clearTimeout(tid); //防止执行两次
+                tid = setTimeout(refreshRem, 300);
+            }, false);
+
+            win.addEventListener("pageshow", function (e) {
+                if (e.persisted) { // 浏览器后退的时候重新计算
+                    clearTimeout(tid);
+                    tid = setTimeout(refreshRem, 300);
+                }
+            }, false);
+
+            if (doc.readyState === "complete") {
+                doc.body.style.fontSize = "16px";
+            } else {
+                doc.addEventListener("DOMContentLoaded", function (e) {
+                    doc.body.style.fontSize = "16px";
+                }, false);
+            }
+        })(750, 750);
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- header start -->
+        <header>
+            <div class="heading clearfix">
+                <a href="/category.html" class="back">
+                    <img src="img/drama/back左箭头.png" alt="" class="back">
+                </a>
+                <h1>商城</h1>
+                <a href="" class="more search">
+                    <img src="img/index/search.png" alt="search" class="search">
+                </a>
+            </div>
+            <ul class="nav_header">
+                <li><a class="header-active">推荐</a></li>
+                <li><a class="">手办</a></li>
+                <li><a class="">漫画</a></li>
+                <li><a class="">光盘</a></li>
+            </ul>
+        </header>
+        <!-- header end -->
+        <!-- content start  -->
+        <div class="content">
+            <div class="recommend content-active">
+                <div class="banner clearfix">
+                    <img src="img/store/book.png" alt="">
+                </div>
+
+                <div class="new">
+                    <div class="title clearfix">
+                        <h4>新品上架&nbsp;<img src="img/store/new(4).png" alt=""></h4>
+                        <p class="more"><img src="img/store/more.png" alt="">&nbsp;MORE</p>
+                    </div>
+                    <div class="goods">
+                        <div class="row clearfix">
+                            <div class="part1">
+                                <a href="/goodDetail.html">
+                                    <p class="name-en">E8 FateGrand Order</p>
+                                    <p class="name-cn">莫德雷德 水手服</p>
+                                    <img src="img/store/E8FateGrandOrder莫德雷德水手服ver.17手办696.png" alt="">
+                                    <p class="price">￥696</p>
+                                </a>
+                            </div>
+                            <div class="part2">
+                                <a href="">
+                                    <p class="name-en">FREEING Saber</p>
+                                    <p class="name-cn">尼禄·克劳尼乌斯 浴衣</p>
+                                    <img src="img/store/FREEINGSaber尼禄·克劳狄乌斯浴衣Ver.18手办465.png" alt="">
+                                    <p class="price">￥696</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="part1">
+                                <a href="">
+                                    <p class="name-en">FREEING FGO Shielder</p>
+                                    <p class="name-cn">马修·基列莱特</p>
+                                    <img src="img/store/FREEINGFGOShielder玛修·基列莱特浴衣Ver.18手办463.png" alt="">
+                                    <p class="price">￥696</p>
+                                </a>
+                            </div>
+                            <div class="part2">
+                                <a href="">
+                                    <p class="name-en">CHARA-ANI刀剑神域</p>
+                                    <p class="name-cn">结成明日奈</p>
+                                    <img src="img/store/CHARA-ANI刀剑神域结城明日奈夏季制服Ver799.png" alt="">
+                                    <p class="price">￥696</p>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- content end  -->
+        <!-- <div class="blank" style="height: 50rem"></div> -->
+        <div class="shopcart">
+            <a href="">
+                <img src="img/store/shopcart.png" alt="">
+            </a>
+        </div>
+    </div>
+</body>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/main.js"></script>
+
+</html>

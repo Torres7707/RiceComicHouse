@@ -1,0 +1,44 @@
+.content .category {
+  width: 100%;
+  height: auto;
+}
+.content .category .part {
+  width: 100%;
+  height: 2rem;
+  border-radius: 0.07rem;
+  background-color: #ffffff;
+  text-align: center;
+  margin-bottom: 0.4rem;
+  cursor: pointer;
+  box-shadow: 0 12px 12px -12px #cccccc;
+}
+.content .category .part .left {
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+.content .category .part .left p {
+  margin-top: 1rem;
+  transform: translateY(-50%);
+}
+.content .category .part .left p .title_cn {
+  display: block;
+  font-size: 0.32rem;
+  color: #76a8fc;
+}
+.content .category .part .left p .title_en {
+  display: block;
+  font-size: 0.2rem;
+  color: #e4e7eb;
+}
+.content .category .part .right {
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+.content .category .part .right img {
+  margin-top: 1rem;
+  transform: translateY(-50%);
+  width: 1.1rem;
+  height: 1.1rem;
+}

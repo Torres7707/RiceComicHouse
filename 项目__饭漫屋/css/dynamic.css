@@ -1,0 +1,104 @@
+header ul.nav_header > li {
+  width: 50% !important;
+}
+.content .following {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+.content .following .banner {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(to bottom, #fedb19, #fba310);
+  border-radius: 0.07rem;
+  position: relative;
+  box-shadow: 0 12px 24px -12px #cccccc;
+}
+.content .following .banner ul.like {
+  width: 100%;
+  padding: 0.2rem 0;
+}
+.content .following .banner ul.like li {
+  width: 25%;
+  float: left;
+  text-align: center;
+}
+.content .following .banner ul.like li img {
+  width: 1.3rem;
+  height: 1.5rem;
+}
+.content .following .banner ul.like li P {
+  font-size: 0.24rem;
+  color: #ffffff;
+}
+.content .following .comment {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  border-radius: 0.05rem;
+  padding: 0.25rem 0;
+  margin-top: 0.4rem;
+  box-shadow: 0 12px 24px -12px #cccccc;
+}
+.content .following .comment .comment-content {
+  width: 100%;
+  padding: 0.2rem 0.25rem;
+}
+.content .following .comment .comment-content .avatar {
+  width: 17%;
+  height: 100%;
+  float: left;
+}
+.content .following .comment .comment-content .avatar .avatarImg {
+  width: 80%;
+  margin: 0 auto;
+}
+.content .following .comment .comment-content .avatar .avatarImg img.avatar {
+  width: 100%;
+}
+.content .following .comment .comment-content .userInfo {
+  width: 83%;
+  float: left;
+  padding-left: 0.24rem;
+}
+.content .following .comment .comment-content .userInfo .top {
+  width: 100%;
+}
+.content .following .comment .comment-content .userInfo .top p.name {
+  font-size: 0.32rem;
+  line-height: 0.5rem;
+  color: #76a8fc;
+  float: left;
+}
+.content .following .comment .comment-content .userInfo .top p.comment-time {
+  float: right;
+  font-size: 0.2rem;
+  line-height: 0.5rem;
+  color: #b8c9e5;
+}
+.content .following .comment .comment-content .userInfo .bottom {
+  width: 100%;
+  margin-top: 0.1rem;
+}
+.content .following .comment .comment-content .userInfo .bottom p {
+  font-size: 0.24rem;
+  line-height: 0.3rem;
+  color: #858f99;
+}
+.content .following .comment .comment-content .userInfo .bottom img {
+  width: 4.2rem;
+  margin-top: 0.15rem;
+}
+.content .following .comment .comment-content .userInfo .operate {
+  width: 100%;
+  margin-top: 0.15rem;
+}
+.content .following .comment .comment-content .userInfo .operate p {
+  float: left;
+  margin-right: 0.5rem;
+  font-size: 0.2rem;
+  color: #b8c9e5;
+}
+.content .following .comment .comment-content .userInfo .operate p img {
+  height: 0.21rem;
+}

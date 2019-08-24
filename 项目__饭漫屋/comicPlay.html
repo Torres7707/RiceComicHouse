@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/base1.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/comicPlay.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <title>comicPlay</title>
+    <script>
+        (function (designWidth, maxWidth) {
+            var doc = document,
+                win = window;
+            var docEl = doc.documentElement;
+            var tid;
+            var rootItem, rootStyle;
+
+            function refreshRem() {
+                var width = docEl.getBoundingClientRect().width;
+                if (!maxWidth) {
+                    maxWidth = 540;
+                };
+                if (width > maxWidth) {
+                    width = maxWidth;
+                }
+                //与淘宝做法不同，直接采用简单的rem换算方法1rem=100px
+                var rem = width * 100 / designWidth;
+                //兼容UC开始
+                rootStyle = "html{font-size:" + rem + 'px !important}';
+                rootItem = document.getElementById('rootsize') || document.createElement("style");
+                if (!document.getElementById('rootsize')) {
+                    document.getElementsByTagName("head")[0].appendChild(rootItem);
+                    rootItem.id = 'rootsize';
+                }
+                if (rootItem.styleSheet) {
+                    rootItem.styleSheet.disabled || (rootItem.styleSheet.cssText = rootStyle)
+                } else {
+                    try {
+                        rootItem.innerHTML = rootStyle
+                    } catch (f) {
+                        rootItem.innerText = rootStyle
+                    }
+                }
+                //兼容UC结束
+                docEl.style.fontSize = rem + "px";
+            };
+            refreshRem();
+
+            win.addEventListener("resize", function () {
+                clearTimeout(tid); //防止执行两次
+                tid = setTimeout(refreshRem, 300);
+            }, false);
+
+            win.addEventListener("pageshow", function (e) {
+                if (e.persisted) { // 浏览器后退的时候重新计算
+                    clearTimeout(tid);
+                    tid = setTimeout(refreshRem, 300);
+                }
+            }, false);
+
+            if (doc.readyState === "complete") {
+                doc.body.style.fontSize = "16px";
+            } else {
+                doc.addEventListener("DOMContentLoaded", function (e) {
+                    doc.body.style.fontSize = "16px";
+                }, false);
+            }
+        })(750, 750);
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- header start -->
+        <header>
+            <div class="heading clearfix">
+                <a href="/drama.html" class="back">
+                    <img src="img/drama/back左箭头.png" alt="" class="back">
+                </a>
+                <!-- <h1>番剧</h1> -->
+                <a href="" class="more search">
+                    <img src="img/comicPlay/more.png" alt="search" class="more">
+                </a>
+            </div>
+            <img src="img/comicPlay/playbutton.png" alt="" class="playButton">
+            <!-- <ul class="nav_header">
+                <li><a class="header-active">推荐</a></li>
+                <li><a class="">连载动画</a></li>
+                <li><a class="">完结动画</a></li>
+            </ul> -->
+        </header>
+        <!-- header end -->
+        <div class="playContent">
+            <div class="dramaInfo clearfix">
+                <img src="img/comicPlay/yourname.png" alt="" class="dramaImg">
+                <div class="dramaText">
+                    <div class="heading clearfix">
+                        <p class="name">你的名字</p>
+                        <p class="score">9.8分</p>
+                    </div>
+                    <p class="time">2016年08月26日上映</p>
+                    <p class="intro">在远离大都会的小山村，住着巫女世家出身的女高中生女孩宫水三叶…</p>
+                    <div class="bottom clearfix">
+                        <p class="playNum">26,824 播放</p>
+                        <div class="operate">
+                            <span>收藏</span> <img src="img/comicPlay/star.png" alt="">
+                            <span>分享</span> <img src="img/comicPlay/share.png" alt="">
+                            <span>下载</span> <img src="img/comicPlay/download.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="more">
+                <div class="title clearfix">
+                    <h4>更多推荐</h4>
+                    <img src="img/comicPlay/refresh.png" alt="" class="refresh">
+                    <span>换一换</span>
+                </div>
+                <div class="drama_content">
+                    <div class="row clearfix">
+                        <div class="part">
+                            <a href="" class="clearfix">
+                                <img src="img/drama/魔法使的新娘.png" alt="">
+                                <p class="name">魔法使的新娘</p>
+                                <p class="score">9.8分</p>
+                            </a>
+                        </div>
+                        <div class="part">
+                            <a href="" class="clearfix">
+                                <img src="img/drama/妖精森林的小不点.png" alt="">
+                                <p class="name">妖精森林的小不点</p>
+                                <p class="score">9.5分</p>
+                            </a>
+                        </div>
+                        <div class="part">
+                            <a href="" class="clearfix">
+                                <img src="img/drama/乌冬面之国的金色毛球.png" alt="">
+                                <p class="name">乌冬面之国的金色毛球</p>
+                                <p class="score">9.8分</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="comment">
+                <div class="title clearfix">
+                    <h4>评论</h4>
+                    <p>（67412）</p>
+                </div>
+                <div class="comment-content clearfix">
+                    <div class="avatar">
+                        <div class="avatarImg">
+                            <img src="img/comicPlay/avatar.png" alt="" class="avatar">
+                        </div>
+                    </div>
+                    <div class="userInfo">
+                        <div class="top clearfix">
+                            <p class="name">文艺委员</p>
+                            <p class="comment-time">刚刚</p>
+                        </div>
+                        <div class="bottom">
+                            <p>
+                                朋友问我看过了再看一遍有不一样吗，我跟他说，以前是几个基佬一起看，现在是几十万基佬一起看(=・ω・=)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- sendcomment start  -->
+        <div class="sendComment clearfix">
+            <input type="text" placeholder="发表你的评论">
+            <a href=""></a>
+        </div>
+        <!-- sendcomment end  -->
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,321 @@
+header {
+  padding-bottom: 50% !important;
+  background: url(../img/me/background.png) no-repeat !important;
+  background-size: 100% 100% !important;
+  position: relative !important;
+}
+.content {
+  top: -1.75rem !important;
+}
+.content .userInfo {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  border-radius: 0.07rem;
+  box-shadow: 0 12px 20px -12px #cccccc;
+  opacity: 0.95;
+  position: relative;
+  text-align: center;
+}
+.content .userInfo img.avatar {
+  width: 2.9rem;
+  height: 2.9rem;
+  margin-top: -1rem;
+}
+.content .userInfo p.username {
+  font-size: 0.36rem;
+  color: #212121;
+  margin-top: -0.5rem;
+}
+.content .userInfo p.info {
+  font-size: 0.2rem;
+  color: #212121;
+}
+.content .userInfo p.info img {
+  width: 0.21rem;
+  height: 0.21rem;
+}
+.content .userInfo ul.status {
+  width: 90%;
+  margin: 0.4rem auto;
+  text-align: center;
+}
+.content .userInfo ul.status li {
+  width: 33.333333%;
+  float: left;
+}
+.content .userInfo ul.status li p.title {
+  font-size: 0.2rem;
+  color: #707071;
+}
+.content .userInfo ul.status li p.num {
+  margin-top: 0.1rem;
+  font-size: 0.3rem;
+  color: #212121;
+}
+.content .userInfo ul.status li p.line {
+  width: 0.22rem;
+  height: 0.02rem;
+  margin: 0.15rem auto;
+}
+.content .userInfo ul.status li p.line1 {
+  background-color: #43dfb5;
+}
+.content .userInfo ul.status li p.line2 {
+  background-color: #dfb543;
+}
+.content .userInfo ul.status li p.line3 {
+  background-color: #d071d3;
+}
+.content .userInfo img.setting {
+  position: absolute;
+  width: 0.26rem;
+  height: 0.26rem;
+  top: 0.15rem;
+  left: 0.15rem;
+}
+.content .userInfo img.message {
+  position: absolute;
+  width: 0.22rem;
+  height: 0.28rem;
+  top: 0.15rem;
+  right: 0.15rem;
+  cursor: pointer;
+}
+.content .myCollection,
+.content .myUpload,
+.content .myDownload,
+.content .myOrder {
+  width: 100%;
+  margin-top: 0.6rem;
+}
+.content .myCollection .heading,
+.content .myUpload .heading,
+.content .myDownload .heading,
+.content .myOrder .heading {
+  width: 100%;
+  height: 0.32rem;
+}
+.content .myCollection .heading p.title,
+.content .myUpload .heading p.title,
+.content .myDownload .heading p.title,
+.content .myOrder .heading p.title {
+  font-size: 0.32rem;
+  color: #212121;
+  line-height: 0.32rem;
+  float: left;
+}
+.content .myCollection .heading p.title img,
+.content .myUpload .heading p.title img,
+.content .myDownload .heading p.title img,
+.content .myOrder .heading p.title img {
+  height: 0.2rem;
+  margin-bottom: 0.06rem;
+}
+.content .myCollection .heading p.more,
+.content .myUpload .heading p.more,
+.content .myDownload .heading p.more,
+.content .myOrder .heading p.more {
+  font-size: 0.18rem;
+  color: #212121;
+  line-height: 0.32rem;
+  float: right;
+}
+.content .myCollection .heading p.more img,
+.content .myUpload .heading p.more img,
+.content .myDownload .heading p.more img,
+.content .myOrder .heading p.more img {
+  height: 0.18rem;
+  margin-bottom: 0.07rem;
+}
+.content .myCollection .collectContent,
+.content .myUpload .collectContent,
+.content .myDownload .collectContent,
+.content .myOrder .collectContent {
+  width: 100%;
+  margin-top: 0.25rem;
+}
+.content .myCollection .collectContent .main,
+.content .myUpload .collectContent .main,
+.content .myDownload .collectContent .main,
+.content .myOrder .collectContent .main {
+  width: 200%;
+}
+.content .myCollection .collectContent .main .part,
+.content .myUpload .collectContent .main .part,
+.content .myDownload .collectContent .main .part,
+.content .myOrder .collectContent .main .part {
+  width: 12.5%;
+  position: relative;
+  border-radius: 0.06rem;
+  overflow: hidden;
+  margin-right: 0.25rem;
+  float: left;
+  box-shadow: 0 12px 20px -12px #cccccc;
+}
+.content .myCollection .collectContent .main .part img,
+.content .myUpload .collectContent .main .part img,
+.content .myDownload .collectContent .main .part img,
+.content .myOrder .collectContent .main .part img {
+  width: 100%;
+  height: 100%;
+}
+.content .myCollection .collectContent .main .part p.name,
+.content .myUpload .collectContent .main .part p.name,
+.content .myDownload .collectContent .main .part p.name,
+.content .myOrder .collectContent .main .part p.name {
+  width: 100%;
+  height: 0.3rem;
+  font-size: 0.18rem;
+  line-height: 0.3rem;
+  color: #ffffff;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.content .myCollection .uploadContent,
+.content .myUpload .uploadContent,
+.content .myDownload .uploadContent,
+.content .myOrder .uploadContent {
+  width: 100%;
+  margin-top: 0.25rem;
+}
+.content .myCollection .uploadContent .main,
+.content .myUpload .uploadContent .main,
+.content .myDownload .uploadContent .main,
+.content .myOrder .uploadContent .main {
+  width: 200%;
+}
+.content .myCollection .uploadContent .main .part,
+.content .myUpload .uploadContent .main .part,
+.content .myDownload .uploadContent .main .part,
+.content .myOrder .uploadContent .main .part {
+  width: 25%;
+  position: relative;
+  border-radius: 0.06rem;
+  overflow: hidden;
+  margin-right: 0.25rem;
+  float: left;
+  box-shadow: 0 12px 20px -12px #cccccc;
+}
+.content .myCollection .uploadContent .main .part img,
+.content .myUpload .uploadContent .main .part img,
+.content .myDownload .uploadContent .main .part img,
+.content .myOrder .uploadContent .main .part img {
+  width: 100%;
+  height: 100%;
+}
+.content .myCollection .uploadContent .main .part p.name,
+.content .myUpload .uploadContent .main .part p.name,
+.content .myDownload .uploadContent .main .part p.name,
+.content .myOrder .uploadContent .main .part p.name {
+  width: 100%;
+  height: 0.3rem;
+  font-size: 0.18rem;
+  line-height: 0.3rem;
+  color: #ffffff;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.content .myCollection .downloadContent,
+.content .myUpload .downloadContent,
+.content .myDownload .downloadContent,
+.content .myOrder .downloadContent {
+  width: 100%;
+  margin-top: 0.25rem;
+}
+.content .myCollection .downloadContent .main,
+.content .myUpload .downloadContent .main,
+.content .myDownload .downloadContent .main,
+.content .myOrder .downloadContent .main {
+  width: 200%;
+}
+.content .myCollection .downloadContent .main .part,
+.content .myUpload .downloadContent .main .part,
+.content .myDownload .downloadContent .main .part,
+.content .myOrder .downloadContent .main .part {
+  width: 12.5%;
+  position: relative;
+  border-radius: 0.06rem;
+  overflow: hidden;
+  margin-right: 0.25rem;
+  float: left;
+  box-shadow: 0 12px 20px -12px #cccccc;
+}
+.content .myCollection .downloadContent .main .part img,
+.content .myUpload .downloadContent .main .part img,
+.content .myDownload .downloadContent .main .part img,
+.content .myOrder .downloadContent .main .part img {
+  width: 100%;
+  height: 100%;
+}
+.content .myCollection .downloadContent .main .part p.name,
+.content .myUpload .downloadContent .main .part p.name,
+.content .myDownload .downloadContent .main .part p.name,
+.content .myOrder .downloadContent .main .part p.name {
+  width: 100%;
+  height: 0.3rem;
+  font-size: 0.18rem;
+  line-height: 0.3rem;
+  color: #ffffff;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.content .myCollection .orderContent,
+.content .myUpload .orderContent,
+.content .myDownload .orderContent,
+.content .myOrder .orderContent {
+  width: 100%;
+  margin-top: 0.25rem;
+}
+.content .myCollection .orderContent .main,
+.content .myUpload .orderContent .main,
+.content .myDownload .orderContent .main,
+.content .myOrder .orderContent .main {
+  width: 200%;
+}
+.content .myCollection .orderContent .main .part,
+.content .myUpload .orderContent .main .part,
+.content .myDownload .orderContent .main .part,
+.content .myOrder .orderContent .main .part {
+  width: 30%;
+  background-color: #ffffff;
+  position: relative;
+  border-radius: 0.06rem;
+  overflow: hidden;
+  margin-right: 0.25rem;
+  float: left;
+  box-shadow: 0 12px 20px -12px #cccccc;
+  padding: 0.15rem;
+}
+.content .myCollection .orderContent .main .part img,
+.content .myUpload .orderContent .main .part img,
+.content .myDownload .orderContent .main .part img,
+.content .myOrder .orderContent .main .part img {
+  width: 24%;
+  height: 100%;
+  float: left;
+}
+.content .myCollection .orderContent .main .part div.right,
+.content .myUpload .orderContent .main .part div.right,
+.content .myDownload .orderContent .main .part div.right,
+.content .myOrder .orderContent .main .part div.right {
+  width: 70%;
+  float: right;
+}
+.content .myCollection .orderContent .main .part div.right p,
+.content .myUpload .orderContent .main .part div.right p,
+.content .myDownload .orderContent .main .part div.right p,
+.content .myOrder .orderContent .main .part div.right p {
+  font-size: 0.2rem;
+  color: #212121;
+  line-height: 0.3rem;
+}
